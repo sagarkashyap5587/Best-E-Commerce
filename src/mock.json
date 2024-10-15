@@ -1,0 +1,68 @@
+{
+    "imageData": [
+        {
+            "id":1,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-03-a.jpg",
+            "type": "Cacti",
+            "name": "Aloe Juvenna Plant",
+            "price": 85
+        },
+        { 
+            "id":2,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-008-a.jpg",
+            "type": "Plants",
+            "name": "Bird of Paradise Plant",
+            "price": 50
+        },
+        {
+            "id":3,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-02-a-400x550.jpg",
+            "type": "Cacti",
+            "name": "Christmas Cactus",
+            "price": 70
+        },
+        {
+            "id":4,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-06-a-400x550.jpg",
+            "type": "Plants",
+            "name": "Fiddle Leaf Fig Plant",
+            "price": 63
+        }
+        
+    ],
+
+    "ImageData2": [
+        {
+            "id":5,
+            "image2": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/cat-02-300x300.jpg",
+            "name2": "Cacti"
+        },
+        {
+            "id":6,
+            "image2":"https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/cat-01-300x300.jpg",
+            "name2": "Plants"
+        }
+    ],
+    "imageData3": [
+        {
+            "id":7,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-07-a.jpg",
+            "type": "Cacti",
+            "name": "Haworthia Limifolia",
+            "price": 91
+        },
+        {
+            "id":8,
+            "image": "https://websitedemos.net/egrow-plants-04/wp-content/uploads/sites/1114/2022/07/flower-009-a-400x550.jpg",
+            "type": "Plants",
+            "name": "Rubber Plant",
+            "price": 78
+        }
+
+    ]
+}
+
+
+
+
+    

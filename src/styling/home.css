@@ -1,0 +1,428 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-background-color {
+    background-color: rgb(241,245,244);
+    width: 100%;
+    height: 52rem;
+    margin-top: 20px;
+}
+
+.complete-width {
+    margin-left: 50px;
+}
+
+.divide-width1 {
+    width: 50%;
+    float: left;
+}
+
+.divide-width2 {
+    width: 50%;
+    float: left;
+    margin-top: 110px;
+}
+
+.main-text {
+    margin-left: 250px;
+}
+.main-text h4 {
+    margin-top: 250px;
+    font-family: serif;
+    font-size: 15px;
+    color: #676867,;
+}
+
+.main-text h1 {
+    margin-top: 25px;
+    font-size: 54px;
+    color: #011c14;
+    font-family: serif;
+}
+
+.main-text h3 {
+    margin-top: 25px;
+    width: 80%;
+    color: #676867;
+    font-family: serif;
+    font-size: 15px;
+}
+
+.price-button {
+    margin-top: 50px;
+}
+
+.price-button Button {
+    margin-left: 20px;
+}
+
+
+.main-heading2 {
+    text-align: center;
+    margin-top: 8.5rem;
+}
+
+.main-heading2 h4 {
+    color:#676867;
+    opacity: 95.0%;
+    font-size: 15px;
+    font-family: serif;
+}
+
+.main-heading2 h1 {
+    color: #011c14;
+    font-size: 42px;
+    font-family: serif;
+    margin-top: 1.35rem;
+}
+
+.special-offer-image {
+    display: flex;
+    justify-content: center;
+    gap: 10.125rem;
+    margin-top: 5rem;
+}
+
+
+.aloe-juvenna-plant-image1 img {
+    width: 670px;
+    height: 950px;
+}
+
+.aloe-juvenna-plant-image2 {
+    position: relative;
+}
+
+.aloe-juvenna-plant-image2 img {
+    margin-top: 200px;
+    width: 370px;
+    height: 508px;
+}
+
+.cart-button-hover {
+    display: none; 
+}
+
+.eye-button-hover {
+    display: none;
+}
+
+.aloe-juvenna-plant-image2:hover .cart-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -30.0rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}
+
+.aloe-juvenna-plant-image2:hover .eye-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -27.0rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}
+
+.aloe-juvenna-plant-image2:hover {
+    margin-top: 200px;
+}
+
+.aloe-juveena-name h4{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12.75px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+.aloe-juveena-name h2 {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #011c14;
+    font-family: sans-serif;
+
+}
+.aloe-name-heading1 {
+    text-decoration: none;
+}
+
+.aloe-juveena-name p {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+
+.image-data1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.mock-json-image  img{
+    width: 433px;
+    height: 596px;
+}
+
+.image-text1 {
+    margin-left: 20px;
+}
+.image-text1 h5 {
+    margin-top: 5px;
+    font-size: 12.75px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+.item-name {
+    margin-top: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #011c14;
+    font-family: sans-serif;
+}
+
+.image-text1 p {
+    margin-top: 5px;
+    font-size: 13px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+
+.mock-json-image {
+    position: relative;
+}
+.mock-json-image:hover .cart-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -34.8rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}
+
+.mock-json-image:hover .eye-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -31.5rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}
+
+
+.main-heading3 {
+    text-align: center;
+    margin-top: 8.5rem;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.main-heading3 h4,
+.main-heading3 h1,
+.main-heading3 p {
+    color: #676867;
+    opacity: 0.95; 
+    font-size: 15px;
+    font-family: serif;
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.main-heading3 h1 {
+    margin-top: 1.35rem;
+    color: #011c14;
+    font-size: 42px;
+}
+
+.main-heading3 p {
+    margin-top: 10px;
+}
+.main-heading3 Button {
+    margin-top: 20px;
+}
+
+
+
+.image-data2 {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-data2 div {
+    position: relative;
+}
+.mock-json-image2 img {
+    width: 887px;
+    height: 899px;
+}
+
+.mock-json-image2 {
+    text-decoration: none;
+}
+.item-name2 {
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    top: -80px;
+    background-color: white; 
+    padding: 5px; 
+    text-align: center; 
+    color: #011c14;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main-heading4 {
+    text-align: center;
+    margin-top: 8.5rem;
+}
+.main-heading4 h4 {
+    color:#676867;
+    opacity: 95.0%;
+    font-size: 15px;
+    font-family: "DM Serif Display";
+}
+
+.main-background-color2 {
+    background-color: rgb(241,245,244);
+    width: 100%;
+    height: 58rem;
+    margin-top: 120px;
+}
+
+.main-text2 {
+    margin-left: 220px;
+    max-width: 400px;
+
+}
+
+.main-text2 img {
+    margin-top: 90px;
+    border-radius: 50%;
+
+}
+
+.main-text2 h4 {
+    margin-top: 40px;
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    color: #011c14;
+    font-size: 32px;
+    font-family: "DM Serif Display";
+}
+
+
+.main-text2 h1 {
+    margin-top: 25px;
+    font-size: 42px;
+    color: #011c14;
+    font-family: "DM Serif Display";
+}
+
+.main-text2 h3 {
+    color: #676867;
+    opacity: 95.0%;
+    font-size: 15px;
+    font-family: "DM Serif Display";
+    margin-top: 20px;
+}
+
+.gift-card-button {
+    margin-top: 25px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+.benefits p {
+    margin-top: 10px;
+    background-color:#586f69;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits h1 {
+    margin-top: 20px;
+    color: #011c14;
+    font-size: 24px;
+    font-size: "DM Serif Display";
+}
+
+.benefits h4 {
+    margin-top: 20px;
+    max-width: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 15px;
+    color:#676867;
+    opacity: 95.0%;
+}

@@ -1,0 +1,125 @@
+.line1 {
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+}
+
+
+.fixsize {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-heading {
+    margin-top: 60px;
+    color: #777777;
+    font-size: 13.8px;
+    font-family: "DM Sans";
+}
+
+.shop-heading .home-heading {
+    text-decoration: none;
+    color: #777777;
+    font-family: "DM Sans";
+    font-size: 13.8px;
+    text-align: start;
+
+}
+
+.filter {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-text {
+    text-decoration: none;
+    color: #011c14;
+    font-size: 16.05px;
+    font-family: "DM Sans";
+}
+
+.sorting-text {
+    text-decoration: none;
+    font-family: "DM Sans";
+    color: #666666;
+    font-size: 15px;
+}
+
+.image-data-shop {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.mock-json-image-shop  img{
+    width: 320px;
+    height: 440px;
+}
+
+.image-text-shop {
+    margin-left: 20px;
+}
+.image-text-shop h5 {
+    font-size: 12.75px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+.item-name-shop {
+    margin-top: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #011c14;
+    font-family: sans-serif;
+}
+
+.image-text-shop p {
+    margin-top: 5px;
+    font-size: 13px;
+    color:#676867;
+    opacity: 95.0%;
+    font-family: sans-serif;
+}
+
+.mock-json-image-shop {
+    position: relative;
+}
+.mock-json-image-shop:hover .cart-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -25.5rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}
+
+.mock-json-image-shop:hover .eye-button-hover {
+    display: block; 
+    position: absolute; 
+    top: -22.5rem; 
+    right: 20px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+    color:#676867;
+    opacity: 95.0%;
+}

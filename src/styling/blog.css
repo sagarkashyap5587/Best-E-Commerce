@@ -1,0 +1,680 @@
+.blog-main-image {
+  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image1 {
+    position: relative;
+}
+
+.image1 img {
+    width: 1234px;
+    height: 827px;
+}
+
+.image1 h4 {
+    position: absolute;
+    top: 24rem;
+    left: 5rem;
+    color: white;
+    font-size: 15px;
+    font-family: "outfit";
+}
+
+.image1 p {
+    position: absolute;
+    top: 24.1rem;
+    color: white;
+    font-size: 70px;
+    font-family: "outfit";
+    word-wrap: break-word;
+    width: 37.5rem;
+    left: 5rem;
+}
+
+.logo1 {
+    position: absolute;
+    top: 46rem;
+    padding: 5px 25px;
+    border-radius: 40px;
+    left: 5rem;
+    background-color: #000000;
+    opacity: 50.0%;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.admin-dinh {
+    color: white;
+    font-family: "outfit";
+    margin-top: 10px;
+}
+.blog-main-page-background {
+    margin-top: 5px;
+    background-color: #bde48a;
+    width: 560px;
+    height: 267px;
+    border-radius: 8px;
+}
+.img-atom {
+    margin-top: 20px;
+    width: 560px;
+    height: 535px;
+    border-radius: 8px;
+    position: relative;
+}
+.image-battery {
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+.design-text {
+font-size: 12px;
+color: #000000;
+margin-left: 30px;
+font-family: "outfit";
+}
+.store-text {
+    font-size: 30px;
+    color: #000000;
+    margin-left: 30px;
+    font-family: "outfit";
+}
+
+.img-atom-text {
+    margin-left: 30px;
+    position:absolute;
+    top: 600px;
+    font-family: "outfit";
+    color: white;
+}
+
+.img-atom-text h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+
+.img-atom-text-h3 {
+    font-size: 12px;
+}
+.img-atom-text-h4 {
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+.inside-design {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.inside-desing-text {
+  font-family: "outfit";  
+}
+
+.inside-desing-text h3 {
+    color: black;
+    font-size: 28px;
+    margin-top: 0px;
+}
+.inside-desing-text p {
+    color: #838383;
+    font-size: 16px;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+    margin-top: 40px;
+    border: 1px solid gray;
+    width: 400px;
+    border-radius: 3px;
+}
+.subscribe-container input {
+    border: none;
+}
+.subscribe-container button {
+    border: none;
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+
+
+.fashion-small-pic {
+    margin-left: 300px;
+    display: flex;
+    margin-top: 100px;
+}
+.fashion-small-pic img {
+    border-radius: 30%;
+    height: 60px;
+    width: 100px;
+    margin-top: 10px;
+}
+.fashion-small-pic h1 {
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: "outfit";
+}
+
+.fashion-container {
+    display: flex;
+    gap: 100px;
+    /* padding: 20px; */
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.main-article-img {
+    width: 600px;
+    height: 460px;
+    border-radius: 8px;
+  }
+  
+  .article-content {
+    padding: 15px 0;
+  }
+  
+  .article-content h3 {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .article-content h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .article-content p {
+    font-size: 16px;
+    color: #555;
+    width: 600px;
+  }
+  
+  .tags {
+    margin-top: 10px;
+  }
+  
+  .tags button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .side-articles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .side-article {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .side-article-img {
+    width: 203px;
+    height: 181px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .side-article-content h4 {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .side-article-content h3 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  
+  .side-article-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .spotlight-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    border-radius: 100px;
+  }
+  
+  .spotlight-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .spotlight-content {
+    position: relative;
+  }
+  
+  .spotlight-image {
+    width: 100%;
+    border-radius: 12px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .spotlight-text {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .author-date {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .spotlight-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .spotlight-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tag {
+    background-color: #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .blog-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 200px;
+    cursor: pointer;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .blog-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-author {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .blog-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .blog-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .blog-tags {
+    margin-top: 10px;
+  }
+  
+  .blog-tag {
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .blog-main-image {
+      display: block;
+    }
+    .image1 img {
+      width: 100%;
+      height: auto;
+    }
+    .image1 h4, .image1 p, .logo1 {
+      left: 2rem;
+      top: 20rem;
+    }
+    .logo1 {
+      top: 10rem;
+    }
+    .logo1 img {
+      width: 80px;
+    }
+    .blog-main-page-background,
+    .img-atom {
+      width: 100%;
+    }
+    .admin-dinh {
+      margin-top: 30px;
+    }
+    .img-atom-text {
+      top: 85rem;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .image1 h4,
+    .image1 p {
+      font-size: 12px;
+      width: 30rem;
+      left: 2rem;
+    }
+    .image1 p {
+      font-size: 40px;
+      width: 400px;
+    }
+    .logo1 {
+      top: 35rem;
+      padding: 5px 15px;
+    }
+    .fashion-container {
+      flex-direction: column;
+      margin-left: 50px;
+      gap: 50px;
+    }
+    .fashion-small-pic {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .image1 h4,
+    .image1 p {
+      font-size: 10px;
+      width: 100%;
+      left: 1rem;
+    }
+    .image1 p {
+      font-size: 40px;
+    }
+    .logo1 {
+      top: 35rem;
+      left: 1rem;
+    }
+    .blog-main-page-background {
+      width: 100%;
+    }
+    .fashion-container {
+      gap: 20px;
+      margin-left: 0;
+    }
+    .main-article-img,
+    .side-article-img {
+      width: 100%;
+      height: auto;
+    }
+    .spotlight-text {
+      width: 100%;
+    }
+    .blog-card {
+      width: 100%;
+    }
+    .inside-design {
+      flex-direction: column;
+      margin: 0 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .image1 h4,
+    .image1 p {
+      font-size: 8px;
+      width: 90%;
+    }
+    .image1 p {
+      font-size: 30px;
+    }
+    .logo1 {
+      top: 30rem;
+    }
+    .fashion-small-pic img {
+      height: 50px;
+      width: 80px;
+    }
+    .fashion-container {
+      gap: 10px;
+    }
+    .blog-list {
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .image1 h4,
+    .image1 p {
+      font-size: 6px;
+    }
+    .image1 p {
+      font-size: 25px;
+    }
+    .logo1 {
+      top: 28rem;
+      left: 1rem;
+    }
+    .fashion-small-pic h1 {
+      font-size: 40px;
+    }
+    .subscribe-container {
+      width: 100%;
+    }
+    .subscribe-container button {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .inside-design {
+      margin-left: 100px;
+      margin-right: 100px;
+      gap: 30px;
+    }
+    .subscribe-container {
+      width: 350px;
+    }
+    .inside-desing-text h3 {
+      font-size: 24px;
+    }
+    .inside-desing-text p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .inside-design {
+      flex-direction: column;
+      margin-left: 50px;
+      margin-right: 50px;
+      gap: 20px;
+    }
+    .subscribe-container {
+      width: 300px;
+      flex-direction: column;
+      height: auto;
+    }
+    .subscribe-container input,
+    .subscribe-container button {
+      width: 100%;
+    }
+    .inside-desing-text h3 {
+      font-size: 22px;
+    }
+    .inside-desing-text p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inside-design {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .subscribe-container {
+      width: 100%;
+    }
+    .inside-desing-text h3 {
+      font-size: 20px;
+    }
+    .inside-desing-text p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 288px) {
+    .image1 h4, .image1 p {
+        font-size: 5px;
+        width: 90%;
+    }
+  
+    .image1 p {
+        font-size: 20px;
+    }
+  
+    .logo1 {
+        top: 25rem;
+        left: 1rem;
+    }
+  
+    .fashion-small-pic img {
+        height: 40px;
+        width: 60px;
+    }
+  
+    .fashion-container {
+        gap: 5px;
+    }
+  
+    .blog-list {
+        flex-direction: column;
+    }
+  
+    .subscribe-container {
+        width: 100%;
+    }
+  
+    .subscribe-container button {
+        width: 50%;
+    }
+  
+    .inside-desing-text h3 {
+        font-size: 18px;
+    }
+  
+    .inside-desing-text p {
+        font-size: 10px;
+    }
+  
+    .spotlight-title {
+        font-size: 1.5rem;
+    }
+  
+    .spotlight-heading {
+        font-size: 1.2rem;
+    }
+  
+    .spotlight-description {
+        font-size: 0.8rem;
+    }
+  
+    .blog-title {
+        font-size: 16px;
+    }
+  
+    .blog-description {
+        font-size: 14px;
+    }
+  }
+  

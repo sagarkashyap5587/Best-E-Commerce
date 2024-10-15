@@ -1,0 +1,95 @@
+.footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: rgb(241, 245, 244);
+    width: 100%;
+    height: 30rem;
+}
+
+.e-grow-plants-image {
+    margin-top: 100px;
+}
+
+.e-grow-plants-image p {
+    margin-top: 20px;
+    max-width: 297px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: "DM Serif Display";
+    
+}
+
+.quick-links {
+    margin-top: 100px;
+}
+
+.quick-links h2 {
+    font-size: 21px;
+    color: #011c14;
+    font-family: "DM Serif Display";
+}
+
+.quick-link-text {
+    text-decoration: none;
+}
+
+.quick-link-text p {
+    font-size: 16px;
+    color: #586f69;
+    font-family:serif;
+    margin-top: 12px;
+}
+
+.quick-link-text p:hover {
+    color: #7a9d91;
+}
+
+.our-socials{
+    margin-top: 100px;
+}
+
+.our-socials h2 {
+    font-size: 21px;
+    color: #011c14;
+    font-family: "DM Serif Display";
+}
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    padding: 5px 10px;
+
+}
+.subsribe {
+    margin-top: 100px;
+}
+
+.subsribe h2 {
+    font-size: 21px;
+    color: #011c14;
+    font-family: "DM Serif Display";
+}
+
+
+.subsribe input {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 280px;
+}
+
+.subsribe Button {
+    margin-top: 20px;
+}

@@ -1,0 +1,41 @@
+.sorting-modal {
+    width: 200px;
+    height: 210px;
+    background-color: white;
+    border: 1px solid gray;
+    right: 250px;
+    top: 240px;
+    display: flex;
+    position: fixed;
+
+}
+
+.sorting-modal div {
+    cursor:pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: serif;
+}
+
+.sorting-modal div h3 {
+    font-size: 16px;
+    font-weight: 0;
+    margin-top: 5px;
+    color: gray;
+}
+
+.sorting-modal div p {
+    font-size: 16px;
+    font-weight: 0;
+    margin-top: 15px;
+    color: gray;
+}
+
+.sorting-modal div :hover {
+    background-color: rgb(207, 24, 116);
+    color: white;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}

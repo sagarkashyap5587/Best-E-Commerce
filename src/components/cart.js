@@ -1,14 +1,46 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../styling/cart.css";
 import { images } from '../assests/index';
 import { Link } from 'react-router-dom';
 import Mock from "../mock.json";
 import Button from "./button";
+import { addToCart, removeToQuantity , removeToCart} from '../redux/action';
+import { useSelector, useDispatch } from 'react-redux';
+const mockdata = [...Mock.imageData, ...Mock.imageData3];
+
 const Cart = () => {
+    const [price, setPrice] = useState(0);
+    const dispatch = useDispatch();
+    const cartData = useSelector((state) => state.product.data)
+    const addToCartData = mockdata.filter(cartItem =>
+        cartData.some(mockItem => mockItem.id === cartItem.id)
+    );
 
     const handleCheckout = () => {
-
+        
     }
+
+    function handleUpdateQuantity(id) {
+        dispatch(addToCart({ id: id }))
+    }
+
+    function handleRemoveQuantity(id) {
+        dispatch(removeToQuantity({ id: id }))
+    }
+
+    function handleRemoveItem(id) {
+        dispatch(removeToCart({id: id}))
+    }
+
+    useEffect(() => {
+        const totalPrice = addToCartData.reduce((acc, item) => {
+            const cartItemData = cartData.find(cartItem => cartItem.id === item.id)
+            const totalItemQuantity = cartItemData ? cartItemData.quantity : 1;
+            return acc + totalItemQuantity * item.price
+        }, 0);
+        setPrice(totalPrice);
+    }, [addToCartData, cartData])
+
     return (
         <>
             <div>
@@ -45,20 +77,23 @@ const Cart = () => {
                             </tr>
                         </thead>
                         {
-                            Mock.imageData.map((item, index) => {
+                            addToCartData.map((item, index) => {
+                                const cartItem = cartData.find(cartItem => cartItem.id === item.id);
+                                const itemQuantity = cartItem ? cartItem.quantity : 1;
+                                // Mock.imageData.map((item, index) => {
                                 return (
-                                    <tbody>
+                                    <tbody key={index}>
                                         <tr>
-                                            <td>{images.cross}</td>
+                                            <td onClick={() => handleRemoveItem(item.id)}>{images.cross} </td>
                                             <td><img src={item.image} alt={item.name} className="product-image" /></td>
                                             <td>{item.name}</td>
                                             <td>{item.price}</td>
                                             <td>
-                                                <button className="quantity-btn">-</button>
-                                                <input className='cart-quatity-detail' type='text' value={1} />
-                                                <button className="quantity-btn">+</button>
+                                                <button className="quantity-btn" onClick={() => handleRemoveQuantity(item.id)}>-</button>
+                                                <input className='cart-quatity-detail' type='text' value={itemQuantity} />
+                                                <button className="quantity-btn" onClick={() => handleUpdateQuantity(item.id)}>+</button>
                                             </td>
-                                            <td>500</td>
+                                            <td>{itemQuantity * item.price}</td>
                                         </tr>
                                     </tbody>
                                 )
@@ -77,11 +112,11 @@ const Cart = () => {
                             <tr>
                                 <div className='price-quantity-details'>
                                     <p>Subtotal</p>
-                                    <p>400</p>
+                                    <p>{price}</p>
                                 </div>
                                 <div className='price-quantity-details'>
                                     <p>Total</p>
-                                    <p>120</p>
+                                    <p>{price}</p>
                                 </div>
                                 <div className='coupon-heading'>
                                     <p>Have a coupon ?</p>
@@ -91,12 +126,8 @@ const Cart = () => {
                                 </div>
                             </tr>
                         </tbody>
-
-
                     </table>
-
                 </div>
-
             </div>
         </>
     )

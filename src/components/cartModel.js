@@ -46,8 +46,8 @@ export const CartModel = ({ isModalOpen, setIsModalOpen }) => {
   useEffect(() => {
     const totalPrice = addToCartData.reduce((acc, item) => {
       const cartItem = cartData.find(cartItem => cartItem.id === item.id);
-      const itemQuantity = cartItem ? cartItem.quantity : 1;
-      return acc + itemQuantity * item.price;
+      const totalItemQuantity = cartItem ? cartItem.quantity : 1;
+      return acc + totalItemQuantity * item.price;
     }, 0);
     setPrice(totalPrice);
   }, [addToCartData, cartData]);

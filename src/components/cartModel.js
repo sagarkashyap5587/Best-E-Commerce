@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../styling/cartModel.css";
 import { images } from '../assests';
 import Mock from "../mock.json";
@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Button from "./button";
 import { useDispatch, useSelector } from 'react-redux';
 import { handleRemoveCartItem } from '../utils/handleCart';
-import { addToCart } from '../redux/action';
+import { addToCart, removeToQuantity } from '../redux/action';
 
 
 const mockdata = [...Mock.imageData, ...Mock.imageData3];
@@ -14,7 +14,7 @@ const mockdata = [...Mock.imageData, ...Mock.imageData3];
 const handleCheckOut = () => {}
 
 export const CartModel = ({ isModalOpen, setIsModalOpen }) => {
-  
+  const [price, setPrice] = useState(0);
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.product.data)
   const addToCartData = mockdata.filter(cartItem =>
@@ -36,11 +36,21 @@ export const CartModel = ({ isModalOpen, setIsModalOpen }) => {
     dispatch(addToCart({id:id}))
   }
 
+  const decreaseQuantity = (id) => {
+    dispatch(removeToQuantity({id: id}))
+  }
   const handleContinueShopping = () => {
     navigate('/shop')
     setIsModalOpen(null)
   }
-
+  useEffect(() => {
+    const totalPrice = addToCartData.reduce((acc, item) => {
+      const cartItem = cartData.find(cartItem => cartItem.id === item.id);
+      const itemQuantity = cartItem ? cartItem.quantity : 1;
+      return acc + itemQuantity * item.price;
+    }, 0);
+    setPrice(totalPrice);
+  }, [addToCartData, cartData]);
   return (
     <>
       {
@@ -64,7 +74,7 @@ export const CartModel = ({ isModalOpen, setIsModalOpen }) => {
                             <img src={item.image} />
                             <div>
                               <h3>{item.name}</h3>
-                              <button>-</button>
+                              <button onClick={() => decreaseQuantity(item.id)}>-</button>
                               <input type='text' value={itemQuantity}></input>
                               <button onClick={() => updateQuantity(item.id)}>+</button>
                             </div>
@@ -91,7 +101,7 @@ export const CartModel = ({ isModalOpen, setIsModalOpen }) => {
                     <div className='line6'></div>
                     <div className='subtotal'>
                       <h3>Subtotal</h3>
-                      <p>20</p>
+                      <p>{price}</p>
                     </div>
                     <div className='line7'></div>
                     <div className='view-cart'><Button buttonText={"VIEW CART"} onClick={handleCart}></Button></div>

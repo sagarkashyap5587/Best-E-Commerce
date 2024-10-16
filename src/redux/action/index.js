@@ -24,10 +24,14 @@ const CartSlice = createSlice({
                 ...state, data: state.data.filter(item => item.id !== action.payload.id)
             }
         },
+        removeToQuantity: (state, action) => {
+            return {
+                ...state, data: state.data.map(item => item.id === action.payload.id ? { ...item, quantity: item.quantity - 1}: item).filter(item => item.quantity > 0)
+            }
+        }
     }
 })
 
-
-export const { addToCart, removeToCart } = CartSlice.actions
+export const { addToCart, removeToCart, removeToQuantity } = CartSlice.actions
 
 export default CartSlice.reducer
